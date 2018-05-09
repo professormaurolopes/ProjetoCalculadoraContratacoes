@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/lblNomeContratado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtNomeContratado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/lblSalarioContratado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salário:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtSalarioContratado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lblMesContratacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mês de Entrada:"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spnMesdeEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lblExAluno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ex-Aluno do IFMA:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rdgExAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Sim" />
+
+        <RadioButton
+            android:id="@+id/rdNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"
+        android:onClick="calcularSalario"/>
+
+</LinearLayout>
